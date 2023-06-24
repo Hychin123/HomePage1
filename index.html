@@ -1,224 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="ex1style.css">
-  <!---custom css link--->
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-  <!---boxicons link--->
-  <link rel="stylesheet"
-   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-  <!---remixicon link--->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="./ex1style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>TP03.1</header>
-    <h1>Basic Button</h1>
-    <div class="warm">
-    <button class="primary"> <span>Primary Button</span></button>
-    <button class="default">
-      <span>Default Button</span> 
-    </button>
-    <button class="dashed ">
-        <span>Dashed Button</span>
-    </button>
-    <button class="text ">
-      <span> Text Button</span>
-    </button>
-    <button class="link">
-        <span>Link Button</span>
-    </button>
+    <header>TP4-01</header>
+    <h>case1</h>
+    <div class="TP4_1">
+        <div class="cont1" style="justify-content:start;"><div class="childcont">Child</div></div>
+        <div class="cont2" style="justify-content:start;align-items:end;"><div class="childcont">Child</div></div>
+        <div class="cont3" style="justify-content:center;align-items:center;"><div class="childcont">Child</div></div>
+        <div class="cont4" style="justify-content:right;align-items:center;"><div class="childcont">Child</div></div>
     </div>
-    <h1>Rounded Button</h1>
-    <div  class="icons">
-      <button class="search">🔍︎</button>
-      <button class="search_1">A</button>
-      <button class="search_2">🔍︎ Search</button> 
-      <button class="search_3">🔍︎</button>
-      <button class="search_4">🔍︎ Search</button> 
-      <button class="search_5">🔍︎</button>
-      <button class="search_6">🔍︎ Search</button> 
-      <button class="search_7">🔍︎</button>
-      <button class="search_8">🔍︎ Search</button>
-      <button class="search_9">🔍︎</button>
+    <h>case2</h>
+    <div class="TP4_1">
+        <div class="conts1" ><div class="childcont" style="position:absolute;">Child</div></div>
+        <div class="conts2" ><div class="childcont" style="position:absolute;bottom:0;">Child</div></div>
+        <div class="conts3" ><div class="childcont" style="position:absolute;top:30%;right:28%;">Child</div></div>
+        <div class="conts4" ><div class="childcont" style="position:absolute;right:0;top:30%;">Child</div></div>
     </div>
-    <h1>Block Button</h1>
-    <div class="block">
-      <button class="b1">Primary</button>
-      <button class="b2">Default</button>
-      <button class="b3">Dashed</button>
-      <button class="b4">text</button>
-      <button class="b5">Link</button>
+    <header>TP4-02</header>
+    <div class="TP4_2">
+        <h>flex</h>
+        <div class="TP4_1">
+            <div class="cont1" style="justify-content:start;flex-direction:column;"><div class="childcont">Child</div></div>
+            <div class="cont2" style="justify-content:start;"><div class="childcont">Child</div></div>
+            <div class="cont3" style="justify-content:center;flex-direction:column;"><div class="childcont">Child</div></div>
+            <div class="cont4" style="justify-content:right;flex-direction:row;"><div class="childcont">Child</div></div>
+        </div>
+        <h>Position</h>
+        <div class="TP4_1">
+            <div class="conts1" ><div class="childcont" style="position:absolute;width:77%;">Child</div></div>
+            <div class="conts2" ><div class="childcont" style="position:absolute;height:77%;translate:0% 0%;">Child</div></div>
+            <div class="conts3" ><div class="childcont" style="position:absolute;width:77%;translate:0% 140%;">Child</div></div>
+            <div class="conts4" ><div class="childcont" style="position:absolute;height:77%;translate:175% 0%">Child</div></div>
+        </div>
     </div>
-  <header>TP03.2</header>
-  <div class="tp3_2">
-    <h1>Horizontal</h1>
-    <div class="hori">
-      <button class="c1">left</button>
-      <button class="c2">middle</button>
-      <button class="c3">right</button>
-    </div>
-    <div class="hori">
-      <button class="c1">1</button>
-      <button class="c2">2</button>
-      <button class="c2">3</button>
-      <button class="c3" style="background-color: gray; color: white;">4</button>
-    </div>
-    <div class="vertical">
-      <button class="v">Button</button>
-      <button class="v1">Button</button>
-      <button class="v1">Button</button>
-      <button class="v1">Button</button>
-      <button class="v1">Button</button>
-      <button class="v2">Button</button>
-
-    </div>
-  </div>
-  <header>TP03_3</header>
-  <div class="tp3_3">
-    <h1>Basic input</h1>
-    <input placeholder="Basic usage" type="text">
-    <h1>Icon input</h1>
-    <div class="inp">
-       <div class="large" style="position: relative;">
-        <input placeholder="large size" type="text">
-        <i class="ri-user-fill"></i>
-       </div>
-       <div class="large" style="position: relative;">
-        <input placeholder="default size" type="text">
-        <i class="ri-user-fill"></i>
-       </div>
-       <div class="large" style="position: relative;">
-        <input placeholder="small size" type="text">
-        <i class="ri-user-fill"></i>
-       </div>
-    <h1>Style Input</h1>
-    <div class="sty">
-      <input class="styinput" type="number">
-      <div class="ph" >
-         <input class="styinput_1" style="width: 15%;" type="number">
-         <input class="styinput_2" type="number">
-      </div>
-      <div class="text_1">
-         <input class="sty_1" type="text" value="https://" style="width: 15%;">
-         <input class="sty_2" placeholder="input search text" type="text">
-         <input class="sty_3" type="submit" value="">
-         <i class="ri-search-line"></i>
-      </div>
-      <div class="text_1">
-          <input class="sty_4" placeholder="combine input and button" type="text">
-          <input class="sty_5" type="submit" value="submit">
-      </div>
-    </div>
-  <header>TP03.4</header>   
-  <div class="tp3_4">
-      <div class="content" style="width: 30%;"> 
-          <h1>Layout #1</h1>
-          <div class="layout">
-                <div>Page Header</div>
-                <div>Nav</div>
-                <div>
-                   Article
-                   <div style="background-color:rgb(222, 243, 227);">Article Header</div>
-                   <div style="background-color: rgb(222, 243, 227); height: 5rem;">Main</div>
+    <header>TP4-03</header>
+    <div class="TP4_3">
+        <h>Flex</h>
+        <div class="flexcont">
+            <div class="container1" style="align-items:center;flex-direction:row;">
+                <div class="childcontainer">
+                    <div class="innerchild"></div>
+                    <div class="innerchild"></div>
+                    <div class="innerchild"></div>
                 </div>
-                <div>Section</div>
-                <div>Aside</div>
-                <div>Footer</div>
-          </div>
-      </div>
-      <div class="content"style="width: 50%;">
-        <h1>Layout #2</h1>
-        <div class="layout">
-            <div>Page Header</div>
-            <div>Nav</div>
-            <div style="display:flex;flex-direction:row;padding:0;background-color:transparent;gap:1.5rem;">
-                <div style="width: 60%;">
-                Article
-                    <div style="background-color: rgb(222, 243, 227);">Article Header</div>
-                    <div style="background-color: rgb(222, 243, 227); height:7rem">Main</div>
-                </div>
-                <div style="width: 40%;">Aside</div>
             </div>
+            <div class="container2" style="justify-content:center;flex-direction:column;transform: rotate(90deg);">
+                <div class="childcontainer">
+                    <div class="innerchild"></div>
+                    <div class="innerchild"></div>
+                    <div class="innerchild"></div>
+                </div>
+            </div>
+            <div class="container3" style="align-items:end;flex-direction:row;">
+                <div class="childcontainer">
+                    <div class="innerchild"></div>
+                    <div class="innerchild"></div>
+                    <div class="innerchild"></div>
+                </div>
+            </div>
+            <div class="container4"style="justify-content:right;flex-direction:column;transform: rotate(90deg);">
+                <div class="childcontainer">
+                    <div class="innerchild"></div>
+                    <div class="innerchild"></div>
+                    <div class="innerchild"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>TP4-04</header>
+    <div class="TP4_4">
+        <div class="contain">
+            <div class="contchild"></div>
+            <div class="contchild">
+                <div class="inchild"></div>
+                <div class="inchild"></div>
+                <div class="inchild"></div>
+            </div>
+            <div class="contchild"></div>
+        </div>
+        <div class="contain" style="flex-direction: column;">
+            <div class="contchild"></div>
+            <div class="contchild" style="flex-direction: row;">
+                <div class="inchild"></div>
+                <div class="inchild"></div>
+                <div class="inchild"></div>
+            </div>
+            <div class="contchild"></div>
+        </div>
+        <div class="contain">
+            <div class="box1">
+                <div class="inbox11"></div>
+                <div class="inbox12">
+                    <div class="inbox121">
+                        <div class="inbox121child"></div>
+                        <div class="inbox121child"></div>
+                    </div>
+                    <div class="inbox122"></div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="inbox2"></div>
+                <div class="inbox2"></div>
+            </div>
+        </div>
+    </div>
+    <header>TP4-05</header>
+    <div class="option">
+        <div class="box-top">
+            <div class="main"></div>
+        </div>
+        <div class="box-bot">
+          <div class="main"></div>
+      </div>
+    </div>
+
+    <header>TP4-06</header>
+    <div class="containe" >
+        <div class="t-contain">
+            <div class="t-left">
+                <div class="main-box">
+                   <div class="box a1"></div>
+                   <div class="box a2"></div>
+                   <div class="box a3"></div>
+                   <div class="box a4"></div>
+                   <div class="box a5"></div>
+                   <div class="box a6"></div>
+                   <div class="box a7"></div>
+                   <div class="box a8"></div>
+                </div>
+            </div>
+            <div class="t-right">
+              <div class="main-box">
+                 <div class="box a1"></div>
+                 <div class="box a2"></div>
+                 <div class="box a3"></div>
+                 <div class="box a4"></div>
+                 <div class="box a5"></div>
+                 <div class="box a6"></div>
             
-            <div style="display: flex; flex-grow: 4;">Section</div>
-            <div>Footer</div>
-        </div>
-    </div>
-    <div class="content"style="width: 80%;">
-        <h1>Layout #3</h1>
-        <div class="layout_3">
-            <div class="container">Page Header</div>
-            <div class="container">Nav</div>
-            <div style="background-color: transparent; display:flex; gap:1rem;">
-                <div style="display:flex; gap: 1rem; flex-direction: column; width: 50%;">
-                    <div class="container" style="display:flex; gap:1rem;flex-direction: column;">
-                        Article 
-                        <div class="container"style="background-color: rgb(222, 243, 227);">Article Header</div>
-                        <div class="container"style="background-color: rgb(222, 243, 227); height:6rem">Main</div>
-                    </div>
-                    <div class="container" style="display:flex;flex-grow:5;height:3rem;">Section</div>
-                </div>
-                <div style="display:flex;width:50%;gap:1rem;flex-direction: column;">
-                    <div style="display:flex;gap:1rem;align-content:center;flex-direction: row;">
-                        <div class="container" style="width: 50%; flex-grow:5;">Aside</div>
-                        <div class="container"style="width: 50%;flex-grow:5;">Aside</div>
-                    </div>
-                    <div class="container" style="flex-grow:5;">Aside</div>
-                </div>
+              </div>
             </div>
-            <div class="container">Footer</div>
-        </div>
-    </div>
-  </div>
-  <header>TP3.5</header>
-    <div class="tp3_5">
-        <div class="left" style="width: 53%;display:flex;flex-direction: column;">
-            <div class="Logo" style="display:flex;align-items: center;gap:10px;">
-                <img style="width: 2rem;border-radius: 8px;" src="https://images.saasworthy.com/horizonuipro_41788_logo_1673588982_qn1fs.jpg">
-                <b style="font-size:1.8rem;">HorizenUI</b>
-            </div>
-            <div class="formcontainer">
-                <h><b>Welcome back!</b></h>
-                <p style="opacity: 40%;font-weight: 400;">Please enter your credentials to access your account</p>
-                <div style="position: relative;">
-                    <img class="googlelogo" src="https://img.freepik.com/free-icon/search_318-265146.jpg">
-                    <button class="gogle">Sign in with Google</button>
-                </div>
-                <div style="display:flex; align-items:center;margin-top: 1rem;">
-                    <hr><span> Or </span><hr>
-                </div>
-                <form class="loginform" style="display:flex;flex-direction:column;gap:1rem;">
-                    <label for="emails"><b>Email*</b></label>
-                    <input type="email"id="emails" placeholder="mail@Example.com">
-                    <label for="passwords"><b>Password*</b></label>
-                    <input type="password" id="password" placeholder="Min 8 characters" minlength="8">
-
-                    <div class="rmbme" style="display:flex;justify-content: space-between; align-items: center;">
-                        <div style="display:flex;">
-                            <input type="checkbox">
-                            <p>Remember me</p>
-                        </div>
-                        <a href="#forgetpassword" style="text-decoration: none;"><b>Forget password?</b></a>
-                    </div>
-                    <button class="gogle" style="padding:0.7rem 0;background-color: blueviolet;color:white;"><b>Sign in</b></button>
-                    <div style="display:flex;align-items: center;">
-                        <p>Not registered yet?</p><a style="text-decoration: none;" href="#create account"><b>Create an account</b></a>
-                    </div>
-                </form>
+            <div class="bot-con">
+              <div class="main-box">
+                <div class="box a1"></div>
+                <div class="box a2"></div>
+                <div class="box a3"></div>
+                <div class="box a4"></div>
+                <div class="box a5"></div>
+                <div class="box a6"></div>
+                <div class="box a7"></div>
+                <div class="box a8"></div>
+              </div>
             </div>
         </div>
-        <div class="right"></div>
     </div>
-</div>
-
-     <!---custom js link--->
-     <script src="js/script.js"></script>
 </body>
 </html>
