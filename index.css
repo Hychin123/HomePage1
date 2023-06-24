@@ -1,0 +1,272 @@
+.contener{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: auto;
+}
+.a_1{
+  padding: 50px;
+  grid-column: 1;
+  grid-row: 1;
+  background-color: burlywood;
+}
+.a_2{
+  background-color: blue;
+  grid-row: 1;
+  grid-column: 2 / 5;
+}
+.a_3{
+  background-color: black;
+  grid-row: 2;
+  grid-column: 1;
+}
+.a_4{
+  background-color: brown;
+  grid-row: 2/4;
+  grid-column: 4;
+}
+.a_5{
+  background-color: chartreuse;
+  grid-column: 3;
+  grid-row: 2/4;
+}
+.a_6{
+  background-color: darkkhaki;
+  grid-column: 2;
+  grid-row: 2/4;
+}
+.a_7{
+  background-color: dodgerblue;
+}
+
+.imoji{
+  position: relative;
+  background-color: blueviolet;
+  padding: 30px;
+  width: 200px;
+  height: 200px;
+  /* justify-content: center; */
+  margin: auto;
+}
+.wrapper{
+  background-color: brown;
+  position: absolute;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 10px;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+.imoji{
+  display: flex;
+  background-color: blueviolet;
+  padding: 30px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.row-wrapper{
+  display: flex;
+  background-color: brown;
+  width: 950px;
+  align-items: normal;
+  justify-content: space-between;
+}
+.row-wrapper .column-wrapper .box{
+  padding: 5px 40px;
+  background-color: burlywood;
+  margin-top: 5px;
+}
+.box{
+  display: flex;
+  background-color: rgb(4, 4, 15);
+  height: 20px;
+  width: 150px;
+  padding: 10px 0;
+  margin: 4px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid{
+  display: grid;
+  background-color: burlywood;
+  gap: 2px;
+  padding: 2px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+.bin{
+  display: grid;
+  background-color: blueviolet;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p{
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.c .p .big{
+  padding: 20px;
+  font-size: 36px;
+  background-color: blueviolet;
+  color: aliceblue;
+  align-items: center;
+  justify-self: center;
+  position: absolute;
+}
+.c .p .small{
+  display: none;
+}
+@media only screen and (max-width: 400px) {
+  .c .p  .small{
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(246, 48, 48);
+    align-items: center;
+    justify-self: center;
+    position: absolute;
+  }
+  .c .p .big{
+    display: none;
+  }
+  
+}
+.cp{
+  background-color: cadetblue;
+  padding: 10px;
+}
+.cp .ct{
+  width: clamp(300px,100%,800px);
+  height: 500px;
+  background-color: blue;
+  margin: 0 auto;
+}
+.ccp{
+  width: 300px;
+  height: 300px;
+  background-color: brown;
+  position: relative;
+}
+.drop{
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: calc(var(--order) *70px);
+  translate: -50% -50%;
+  animation-name: dropIcon;
+  animation-duration: 2s;
+  animation-delay: calc(var(--order)*1s);
+}
+@keyframes dropIcon{
+  from{
+    top: -100%;
+  }
+  to{
+    top: 50%;
+    left: calc(var(--order) *70px);
+    translate: -50% -50%;
+  }
+}
+
+.cpp{
+  height: 400px;
+  width: 500px;
+  margin: auto;
+  border: 2px solid black;
+  padding: 10px;
+  display: grid;
+}
+.cpp .header{
+  display: flex;
+  background-color: brown;
+  width: auto;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.cpt{
+  height: 300px;
+  overflow-y: auto;
+}
+
+.sc{
+  display: grid;
+  border: 2px solid black;
+  padding: 10px 5px 0 5px;
+  height: 400px;
+  width: 500px;
+  margin: auto;
+}
+.header{
+  display: flex;
+  background-color: brown;
+  width: auto;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.sct{
+  height: 90%;
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  grid-template-columns: repeat(4, auto);
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+.scs{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.scc{
+  display: grid;
+  border: 2px solid black;
+  padding: 10px 5px 0 5px;
+  height: 400px;
+  width: 500px;
+  margin: auto;
+}
+.header{
+  display: flex;
+  background-color: brown;
+  width: auto;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.sctt{
+  height: 94%;
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  grid-template-columns: repeat(7, auto);
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.scst{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
