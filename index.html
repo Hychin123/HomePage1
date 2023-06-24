@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HomePage</title>
-
+  <title>Document</title>
+  <link rel="stylesheet" href="ex1style.css">
   <!---custom css link--->
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -15,65 +15,210 @@
 
   <!---remixicon link--->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-  <!---google font link--->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="./ex1style.css">
 </head>
 <body>
-   <div class="container">
-      <div class="device">
-           <div class="header">
-               <h1>V-BOX </h1>
-               <div class="avatar"></div>
-           </div>
+  <header>TP03.1</header>
+    <h1>Basic Button</h1>
+    <div class="warm">
+    <button class="primary"> <span>Primary Button</span></button>
+    <button class="default">
+      <span>Default Button</span> 
+    </button>
+    <button class="dashed ">
+        <span>Dashed Button</span>
+    </button>
+    <button class="text ">
+      <span> Text Button</span>
+    </button>
+    <button class="link">
+        <span>Link Button</span>
+    </button>
+    </div>
+    <h1>Rounded Button</h1>
+    <div  class="icons">
+      <button class="search">🔍︎</button>
+      <button class="search_1">A</button>
+      <button class="search_2">🔍︎ Search</button> 
+      <button class="search_3">🔍︎</button>
+      <button class="search_4">🔍︎ Search</button> 
+      <button class="search_5">🔍︎</button>
+      <button class="search_6">🔍︎ Search</button> 
+      <button class="search_7">🔍︎</button>
+      <button class="search_8">🔍︎ Search</button>
+      <button class="search_9">🔍︎</button>
+    </div>
+    <h1>Block Button</h1>
+    <div class="block">
+      <button class="b1">Primary</button>
+      <button class="b2">Default</button>
+      <button class="b3">Dashed</button>
+      <button class="b4">text</button>
+      <button class="b5">Link</button>
+    </div>
+  <header>TP03.2</header>
+  <div class="tp3_2">
+    <h1>Horizontal</h1>
+    <div class="hori">
+      <button class="c1">left</button>
+      <button class="c2">middle</button>
+      <button class="c3">right</button>
+    </div>
+    <div class="hori">
+      <button class="c1">1</button>
+      <button class="c2">2</button>
+      <button class="c2">3</button>
+      <button class="c3" style="background-color: gray; color: white;">4</button>
+    </div>
+    <div class="vertical">
+      <button class="v">Button</button>
+      <button class="v1">Button</button>
+      <button class="v1">Button</button>
+      <button class="v1">Button</button>
+      <button class="v1">Button</button>
+      <button class="v2">Button</button>
 
-           <div class="search-box">
-               <input type="search" placeholder="Search">
-               <button class="button-icon s"><i class="ri-search-line"></i></button>
-           </div>
-
-           <div class="story">
-               <button class="brand all active">ALL</button>
-               <button class="brand a"></button>
-               <button class="brand b"></button>
-               <button class="brand c"></button>
-               <button class="brand d"></button>
-               <button class="brand e"></button>
-           </div>
-
-           <div class="recipes">
-             <div class="avatar-a"> <h3>VBOX <span>online</span></h3> </div>
-              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat maxime voluptatibus odio aliquid autem? </h4>
-                <div class="recipe first">
-                    <div class="wrapper">
-                        <div class="work">
-                            <button class="button-icon like"></button>
-                            <button class="button-icon comment"></button>
-                            <button class="button-icon share"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="avatar-a"> <h3>VBOX <span>online</span></h3> </div>
-                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat maxime voluptatibus odio aliquid autem? </h4>
-                <div class="recipe second">
-                    <div class="wrapper">
-                    </div>
-                </div>
-           
-           </div>
-           <div class="navbar">
-               <button class="button-icon home active"></button>
-               <button class="button-icon chat"></button>
-               <button class="button-icon book"></button>
-               <button class="button-icon profile"></i></button>           
-            </div>
-
+    </div>
+  </div>
+  <header>TP03_3</header>
+  <div class="tp3_3">
+    <h1>Basic input</h1>
+    <input placeholder="Basic usage" type="text">
+    <h1>Icon input</h1>
+    <div class="inp">
+       <div class="large" style="position: relative;">
+        <input placeholder="large size" type="text">
+        <i class="ri-user-fill"></i>
+       </div>
+       <div class="large" style="position: relative;">
+        <input placeholder="default size" type="text">
+        <i class="ri-user-fill"></i>
+       </div>
+       <div class="large" style="position: relative;">
+        <input placeholder="small size" type="text">
+        <i class="ri-user-fill"></i>
+       </div>
+    <h1>Style Input</h1>
+    <div class="sty">
+      <input class="styinput" type="number">
+      <div class="ph" >
+         <input class="styinput_1" style="width: 15%;" type="number">
+         <input class="styinput_2" type="number">
       </div>
-   </div>
-   <!---custom js link--->
-   <script src="js/script.js"></script>
+      <div class="text_1">
+         <input class="sty_1" type="text" value="https://" style="width: 15%;">
+         <input class="sty_2" placeholder="input search text" type="text">
+         <input class="sty_3" type="submit" value="">
+         <i class="ri-search-line"></i>
+      </div>
+      <div class="text_1">
+          <input class="sty_4" placeholder="combine input and button" type="text">
+          <input class="sty_5" type="submit" value="submit">
+      </div>
+    </div>
+  <header>TP03.4</header>   
+  <div class="tp3_4">
+      <div class="content" style="width: 30%;"> 
+          <h1>Layout #1</h1>
+          <div class="layout">
+                <div>Page Header</div>
+                <div>Nav</div>
+                <div>
+                   Article
+                   <div style="background-color:rgb(222, 243, 227);">Article Header</div>
+                   <div style="background-color: rgb(222, 243, 227); height: 5rem;">Main</div>
+                </div>
+                <div>Section</div>
+                <div>Aside</div>
+                <div>Footer</div>
+          </div>
+      </div>
+      <div class="content"style="width: 50%;">
+        <h1>Layout #2</h1>
+        <div class="layout">
+            <div>Page Header</div>
+            <div>Nav</div>
+            <div style="display:flex;flex-direction:row;padding:0;background-color:transparent;gap:1.5rem;">
+                <div style="width: 60%;">
+                Article
+                    <div style="background-color: rgb(222, 243, 227);">Article Header</div>
+                    <div style="background-color: rgb(222, 243, 227); height:7rem">Main</div>
+                </div>
+                <div style="width: 40%;">Aside</div>
+            </div>
+            
+            <div style="display: flex; flex-grow: 4;">Section</div>
+            <div>Footer</div>
+        </div>
+    </div>
+    <div class="content"style="width: 80%;">
+        <h1>Layout #3</h1>
+        <div class="layout_3">
+            <div class="container">Page Header</div>
+            <div class="container">Nav</div>
+            <div style="background-color: transparent; display:flex; gap:1rem;">
+                <div style="display:flex; gap: 1rem; flex-direction: column; width: 50%;">
+                    <div class="container" style="display:flex; gap:1rem;flex-direction: column;">
+                        Article 
+                        <div class="container"style="background-color: rgb(222, 243, 227);">Article Header</div>
+                        <div class="container"style="background-color: rgb(222, 243, 227); height:6rem">Main</div>
+                    </div>
+                    <div class="container" style="display:flex;flex-grow:5;height:3rem;">Section</div>
+                </div>
+                <div style="display:flex;width:50%;gap:1rem;flex-direction: column;">
+                    <div style="display:flex;gap:1rem;align-content:center;flex-direction: row;">
+                        <div class="container" style="width: 50%; flex-grow:5;">Aside</div>
+                        <div class="container"style="width: 50%;flex-grow:5;">Aside</div>
+                    </div>
+                    <div class="container" style="flex-grow:5;">Aside</div>
+                </div>
+            </div>
+            <div class="container">Footer</div>
+        </div>
+    </div>
+  </div>
+  <header>TP3.5</header>
+    <div class="tp3_5">
+        <div class="left" style="width: 53%;display:flex;flex-direction: column;">
+            <div class="Logo" style="display:flex;align-items: center;gap:10px;">
+                <img style="width: 2rem;border-radius: 8px;" src="https://images.saasworthy.com/horizonuipro_41788_logo_1673588982_qn1fs.jpg">
+                <b style="font-size:1.8rem;">HorizenUI</b>
+            </div>
+            <div class="formcontainer">
+                <h><b>Welcome back!</b></h>
+                <p style="opacity: 40%;font-weight: 400;">Please enter your credentials to access your account</p>
+                <div style="position: relative;">
+                    <img class="googlelogo" src="https://img.freepik.com/free-icon/search_318-265146.jpg">
+                    <button class="gogle">Sign in with Google</button>
+                </div>
+                <div style="display:flex; align-items:center;margin-top: 1rem;">
+                    <hr><span> Or </span><hr>
+                </div>
+                <form class="loginform" style="display:flex;flex-direction:column;gap:1rem;">
+                    <label for="emails"><b>Email*</b></label>
+                    <input type="email"id="emails" placeholder="mail@Example.com">
+                    <label for="passwords"><b>Password*</b></label>
+                    <input type="password" id="password" placeholder="Min 8 characters" minlength="8">
+
+                    <div class="rmbme" style="display:flex;justify-content: space-between; align-items: center;">
+                        <div style="display:flex;">
+                            <input type="checkbox">
+                            <p>Remember me</p>
+                        </div>
+                        <a href="#forgetpassword" style="text-decoration: none;"><b>Forget password?</b></a>
+                    </div>
+                    <button class="gogle" style="padding:0.7rem 0;background-color: blueviolet;color:white;"><b>Sign in</b></button>
+                    <div style="display:flex;align-items: center;">
+                        <p>Not registered yet?</p><a style="text-decoration: none;" href="#create account"><b>Create an account</b></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+</div>
+
+     <!---custom js link--->
+     <script src="js/script.js"></script>
 </body>
 </html>
